@@ -34,3 +34,6 @@ This page contains the main check in elements required for members to check in, 
 2. the email and password input boxes to allow a member to sign into their account
 3. a button to submit the input
 4. a link to manage the website for the site admin
+
+## Additional notes
+Obviously the full function of the website isn't complete here with the current implementation, but hopefully as the course goes on I can build out the full functionality needed.
