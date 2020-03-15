@@ -1,14 +1,67 @@
-.pageTitle {
+@media screen and (max-width: 992px) {
+  .smallScreen {
+    background-color: red;
+    color: white;
+    border: 10px;
+    border-style: solid;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .smallScreen {
+    display: none;
+  }
+}
+
+#siteAdmin {
+  color: lightgrey;
+  border: 440px 0px 0px 0px;
+}
+
+.sectionTitle {
   color: grey;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: lightgrey;
 }
 
 h5 {
-  color: darkgrey;
+  color: black;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .copyrightText {
   font-weight: bold;
+}
+
+ul .comingSoon, ul .comingLater {
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}
+
+ul li {
+  color: black;
+}
+
+ul .comingSoon {
+  background-color: lightgreen;
+}
+
+ul .comingSoon::before {
+  content: "(Coming Soon) ";
+}
+
+ul .comingLater {
+  background-color: orange;
+}
+
+ul .comingLater::before {
+  content: "(Coming Later) ";
 }

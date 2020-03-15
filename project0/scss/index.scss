@@ -1,18 +1,78 @@
-$titleColor: grey;
-$headerColor: darkgrey;
+$sectionTitleColor: grey;
+$h5Color: black;
 $copyrightTextStyle: bold;
+$liTextColor: black;
 
-.pageTitle {
-  color: $titleColor;
+@media screen and (max-width: 992px) {
+  .smallScreen {
+    background-color: red;
+    color: white;
+    border: 10px;
+    border-style: solid;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .smallScreen {
+    display: none;
+  }
+}
+
+#siteAdmin {
+  color: lightgrey;
+  border: 440px 0px 0px 0px;
+}
+
+.sectionTitle {
+  color: $sectionTitleColor;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: lightgrey;
 }
 
 h5 {
-  color: $headerColor;
+  color: $h5Color;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .copyrightText {
   font-weight: $copyrightTextStyle;
+}
+
+%comingLater {
+    font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}
+
+ul {
+
+  li {
+    color: $liTextColor;
+  }
+
+  .comingSoon {
+    @extend %comingLater;
+    background-color: lightgreen;
+  }
+
+  .comingSoon::before {
+    content: "(Coming Soon) ";
+  }
+
+  .comingLater {
+    @extend %comingLater;
+    background-color: orange;
+  }
+
+  .comingLater::before {
+    content: "(Coming Later) ";
+  }
+
 }
