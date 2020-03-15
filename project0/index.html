@@ -7,55 +7,69 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
-      <header>
-        <h1>Welcome to Hot Shot Table Tennis</h1>
-      </header>
-      <nav>
-        <a href="#">Member Check In</a>
-        <a href="#">Manage Your Membership</a>
-        <a href="#">Become a Member</a>
-        <a href="#">Admin</a>
-        <a href="#">About</a>
-      </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Member Check In<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Manage Your Membership</a>
+              <a class="nav-item nav-link" href="#">Become a Member</a>
+              <a class="nav-item nav-link" href="#">Admin</a>
+            </div>
+          </div>
+        </nav>
 
       <div class="container">
+
         <div class="row">
           <div class="col">
               <h2>Member Check In</h2>
           </div>
         </div>
+
         <div class="row">
           <div class="col">
-            Scan or Enter Membership ID
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <label for="exampleInputEmail1">Scan or Enter Your Membership ID</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Membership ID" aria-describedby="emailHelp">
+                  </div>
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p>TechFriend Club Management System 1.0 v2020.12</p>
           </div>
         </div>
+
         <div class="row">
-          <form>
-            <div class="">
-              <input type="text" name="membership-id" placeholder="Membership ID">
-              <button type="button" name="check-in-button">Check In</button>
-            </div>
-          </form>
+          <div class="col">
+            <!-- <p>TechFriend Club Management System 1.0 v2020.12</p> -->
+          </div>
         </div>
 
       </div>
-      <section>
-          <h1>Member Check In</h1>
-      </section>
 
-      <form>
-        <div class="">
-          Scan or Enter Membership ID
-        </div>
-        <div class="">
-          <input type="text" name="membership-id" placeholder="Membership ID">
-          <button type="button" name="check-in-button">Check In</button>
-        </div>
-      </form>
-
-      <footer>
-        <p>TechFriend Club Management System 1.0 v2020.12</p>
-      </footer>
 
     </body>
 </html>
