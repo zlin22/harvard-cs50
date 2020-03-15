@@ -1,0 +1,14 @@
+.pageTitle {
+  color: grey;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h5 {
+  color: darkgrey;
+  padding-bottom: 10px;
+}
+
+.copyrightText {
+  font-weight: bold;
+}

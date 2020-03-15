@@ -1,0 +1,18 @@
+$titleColor: grey;
+$headerColor: darkgrey;
+$copyrightTextStyle: bold;
+
+.pageTitle {
+  color: $titleColor;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h5 {
+  color: $headerColor;
+  padding-bottom: 10px;
+}
+
+.copyrightText {
+  font-weight: $copyrightTextStyle;
+}
