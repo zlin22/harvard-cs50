@@ -15,7 +15,6 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <a class="navbar-brand" href="index.html">
         <img src="https://images.squarespace-cdn.com/content/v1/592715679de4bb56b6f52dc3/1575487314377-8ILD99MIL70XF02VY8V6/ke17ZwdGBToddI8pDm48kBD2FKG2VYgv9vJ-sxRHyeVZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7eYzOKsynbf6SIIjIVpddg9XuI9fW4HahfJRw8_j4CZzf8pmB28R7ZtB-Q9IQS1W4w/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
         Hot Shot Table Tennis
@@ -23,9 +22,9 @@
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Member Check In<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="manage-your-membership.html">Manage Your Membership</a>
-          <a class="nav-item nav-link" href="become-a-member.html">Become a Member</a>
+          <a class="nav-item nav-link" href="index.html">Member Check In</a>
+          <a class="nav-item nav-link " href="manage-your-membership.html">Manage Your Membership</a>
+          <a class="nav-item nav-link active" href="become-a-member.html">Become a Member<span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="admin.html">Admin</a>
         </div>
       </div>
@@ -33,36 +32,66 @@
 
     <div class="container">
 
-      <h3 class="pageTitle">Member Check In</h3>
+      <div class="row">
+        <div class="col">
+          <h3 class="pageTitle">Pricing</h3>
+        </div>
+      </div>
+
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Membership type</th>
+            <th scope="col">Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1-Day Pass</th>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <th scope="row">30-Day Pass</th>
+            <td>$45</td>
+          </tr>
+        </tbody>
+      </table>
 
       <div class="row">
         <div class="col">
-          <form>
-            <div class="form-group">
-              <div class="row">
-                <div class="col">
-                  <label for="exampleInputEmail1">Scan or Enter Your Membership ID</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Membership ID" aria-describedby="emailHelp">
-                </div>
-                <div class="col">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </div>
-              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
-          </form>
+          <h3 class="pageTitle">Become a Member</h3>
         </div>
       </div>
 
       <div class="row">
         <div class="col">
-          <!-- <p>TechFriend Club Management System 1.0 v2020.12</p> -->
+          <h4>Enter your personal information</h4>
         </div>
       </div>
+
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-3">
+            <label for="inputFirstName">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName" required>
+          </div>
+          <div class="form-group col-3">
+            <label for="inputLastName">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" required>
+          </div>
+          <div class="form-group col-4">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" required>
+          </div>
+          <div class="form-group col-2">
+            <label for="inputPhone">Phone (optional)</label>
+            <input type="tel" class="form-control" id="inputPhone" pattern="[0-9]{10}">
+            <small id="phoneHelp" class="form-text text-muted">Format: 2015551111. Only used on WhatsApp for club updates.</small>
+          </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+      </form>
 
 
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -74,10 +103,6 @@
       </footer>
 
     </div>
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
